@@ -1,0 +1,124 @@
+{
+    "nav": {
+        "encryption": "Encryption",
+        "encoding": "Encoding",
+        "hash": "hash",
+        "random_password": "Random password",
+        "symmetric_encryption": "Symmetric encryption",
+        "asymmetric_encryption": "Asymmetric encryption"
+    },
+    "encrypt": "Encrypt",
+    "decrypt": "Decrypt",
+    "sy_en": {
+        "input_placeholer": "Enter text to encrypt/decrypt",
+        "output_placeholder": "Encrypted/Decrypted text will appear here",
+        "title": "AES/SM4 Encryption and Decryption",
+        "encryptionSettings": "Encryption Settings",
+        "input": "Input",
+        "output": "Output",
+        "aesSecretKey": "Enter your secret key (32 characters for AES-256, fill 0 if need)",
+        "sm4SecretKey": "Enter your secret key (16 characters for SM4，fill 0 if need)"
+    },
+    "en_de": {
+        "title": "Base64, URL, Hex encode and decode",
+        "encode": "Encode",
+        "decode": "Decode",
+        "placeholder": {
+            "input": "Enter text...",
+            "output": "As a result..."
+        }
+    },
+    "hash": {
+        "title": "Hash Calculator",
+        "placeholder": {
+            "input": "Input text to calculate hash",
+            "output": "Hash value"
+        },
+        "button": {
+            "calculate": "Calculate Hash"
+        }
+    },
+    "copySuccess": "Password copied to clipboard!",
+    "textCopySuccess": "Text copied successfully!",
+
+    "copyFail": "Failed to copy password.",
+    "random_password": {
+        "title": "Random Password Generator",
+        "passwordLengthSettings": "Password Length Settings",
+        "passwordLengthPlaceholder": "Set password length",
+        "generate": "Generate",
+        "generatedPassword": "Generated Password",
+        "generatedPasswordPlaceholder": "Generated password will appear here",
+        "characterSettings": "Character Settings",
+        "includeUppercase": "Include Uppercase",
+        "includeNumbers": "Include Numbers",
+        "includeSpecialChars": "Include Special Characters",
+        "errorMessage": "Password length must be between 4 and 128 characters."
+    },
+
+    "publicKey": "Public Key",
+    "privateKey": "Private Key",
+    "rsasm2": {
+        "title": "RSA-2048/SM2 Secure Messaging",
+        "tabs": {
+            "keyGenerate": "Key Generate",
+            "encrypt": "Encrypt",
+            "signature": "Signature"
+        },
+        "keyGenerate": {
+            "generateKeys": "Generate Keys",
+            "generatedKeys": "Generated Keys",
+            "algorithm": "Algorithm",
+            "publicKey": "Public Key",
+            "privateKey": "Private Key",
+            "rsa": "RSA-2048",
+            "sm2": "SM2",
+            "generateButton": "Generate Keys",
+            "elmsg_succ":"PublicKey and PrivateKey is filled."
+        },
+        "encryption": {
+            "encryption": "Encryption",
+            "encryptionMethod": "Encryption Method",
+            "publicKey": "Public Key",
+            "message": "Message",
+            "encryptedMessage": "Encrypted Message",
+            "encryptButton": "Encrypt",
+            "placeholder_pk":"Enter your public key",
+            "placeholder_msg":"Enter your message"
+        },
+        "decryption": {
+            "decryption": "Decryption",
+            "decryptionMethod": "Decryption Method",
+            "privateKey": "Private Key",
+            "encryptedMessage": "Encrypted Message",
+            "decryptedMessage": "Decrypted Message",
+            "decryptButton": "Decrypt",
+            "placeholder_prik":"Enter your private key",
+            "placeholder_msg":"Enter your encrypted message",
+            "placeholder_decryptedMessage":"Your decrypted Message will display here"
+        },
+        "signature": {
+            "signature": "Signature",
+            "signatureMethod": "Signature Method",
+            "message": "Message",
+            "signatureMessage": "Signature Message",
+            "signatureButton": "Signature",
+            "placeholder_prik":"Enter Private key",
+            "placeholder_msg":"Enter your message"
+        },
+        "verification": {
+            "verification": "Verification",
+            "verificationMethod": "Verification Method",
+            "publicKey": "Public Key",
+            "message": "Message",
+            "signatureMessage": "Signature Message",
+            "verifySignatureButton": "Verify Signature",
+            "verificationResults": "Verification Results",
+            "validSignature": "Signature is valid",
+            "invalidSignature": "Signature is invalid",
+            "placeholder_pk":"Enter Public key",
+            "placeholder_msg":"Enter message",
+            "placeholder_signatureMessage":"Enter Signature message"
+        }
+    }
+}

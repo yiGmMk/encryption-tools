@@ -1,0 +1,123 @@
+{
+    "nav": {
+        "encryption": "加解密",
+        "encoding": "编码/解码",
+        "hash": "哈希计算",
+        "random_password": "随机密码",
+        "symmetric_encryption": "对称加密",
+        "asymmetric_encryption": "非对称加密"
+    },
+    "encrypt": "加密",
+    "decrypt": "解密",
+    "sy_en": {
+        "input_placeholer": "请输入文本进行加密或解密",
+        "output_placeholder": "此处将显示加密/解密文本",
+        "title": "AES/SM4 加密和解密",
+        "encryptionSettings": "加密设置",
+        "input": "输入",
+        "output": "输出",
+        "aesSecretKey": "请输入您的密钥（AES-256 需要 32 个字符，不足则自动填充0）",
+        "sm4SecretKey": "请输入您的密钥（SM4 需要 16 个字符，不足则自动填充0）"
+    },
+    "en_de": {
+        "title": "Base64, URL, Hex 编码与解码",
+        "encode": "编码",
+        "decode": "解码",
+        "placeholder": {
+            "input": "输入文本...",
+            "output": "结果..."
+        }
+    },
+    "hash": {
+        "title": "哈希计算器",
+        "placeholder": {
+            "input": "输入文本以计算哈希值",
+            "output": "哈希值"
+        },
+        "button": {
+            "calculate": "计算哈希值"
+        }
+    },
+    "copySuccess": "已复制到剪贴板！",
+    "textCopySuccess": "文本复制成功！",
+    "copyFail": "复制密码失败。",
+    "random_password": {
+        "title": "随机密码生成器",
+        "passwordLengthSettings": "密码长度设置",
+        "passwordLengthPlaceholder": "设置密码长度",
+        "generate": "生成",
+        "generatedPassword": "生成的密码",
+        "generatedPasswordPlaceholder": "生成的密码将显示在此处",
+        "characterSettings": "字符设置",
+        "includeUppercase": "包含大写字母",
+        "includeNumbers": "包含数字",
+        "includeSpecialChars": "包含特殊字符",
+        "errorMessage": "密码长度必须在4到128个字符之间。"
+    },
+    "publicKey": "公钥",
+    "privateKey": "私钥",
+    "rsasm2": {
+        "title": "RSA-2048/SM2 安全消息",
+        "tabs": {
+            "keyGenerate": "密钥生成",
+            "encrypt": "加密/解密",
+            "signature": "签名/验签"
+        },
+        "keyGenerate": {
+            "generateKeys": "生成密钥",
+            "generatedKeys": "生成的密钥",
+            "algorithm": "算法",
+            "publicKey": "公钥",
+            "privateKey": "私钥",
+            "rsa": "RSA-2048",
+            "sm2": "SM2",
+            "generateButton": "生成密钥",
+            "elmsg_succ":"公钥和私钥已填充到 tab 标签对应的位置"
+        },
+        "encryption": {
+            "encryption": "加密",
+            "encryptionMethod": "加密方式",
+            "publicKey": "公钥",
+            "message": "消息",
+            "encryptedMessage": "已加密的消息",
+            "encryptButton": "加密",
+            "placeholder_pk":"请输入你的公钥",
+            "placeholder_msg":"请输入你要加密的文本"
+        },
+        "decryption": {
+            "decryption": "解密",
+            "decryptionMethod": "解密方式",
+            "privateKey": "私钥",
+            "encryptedMessage": "加密的消息",
+            "decryptedMessage": "解密的消息",
+            "decryptButton": "解密",
+            "placeholder_prik":"请输入你的私钥",
+            "placeholder_msg":"请输入要解密的密文",
+            "placeholder_decryptedMessage":"此处展示解密后的明文"
+        },
+        "signature": {
+            "signature": "签名",
+            "signatureMethod": "签名方式",
+            "message": "消息",
+            "signatureMessage": "签名的消息",
+            "signatureButton": "签名",
+            "placeholder_prik":"请输入你的私钥",
+            "placeholder_msg":"请输入你要签名的文本内容"
+
+        },
+        "verification": {
+            "verification": "验签",
+            "verificationMethod": "验证方式",
+            "publicKey": "公钥",
+            "message": "消息",
+            "signatureMessage": "签名的消息",
+            "verifySignatureButton": "验证签名",
+            "verificationResults": "验证结果",
+            "validSignature": "签名有效",
+            "invalidSignature": "签名无效",
+            "placeholder_pk":"请输入公钥",
+            "placeholder_msg":"请输入要验签的文本【签名前的文本】",
+            "placeholder_signatureMessage":"请输入签名的消息"
+        }
+    }
+}
