@@ -5,7 +5,8 @@
         "hash": "hash",
         "random_password": "Random password",
         "symmetric_encryption": "Symmetric encryption",
-        "asymmetric_encryption": "Asymmetric encryption"
+        "asymmetric_encryption": "Asymmetric encryption",
+        "file_encrypt": "File encryption"
     },
     "encrypt": "Encrypt",
     "decrypt": "Decrypt",
@@ -120,5 +121,21 @@
             "placeholder_msg":"Enter message",
             "placeholder_signatureMessage":"Enter Signature message"
         }
+    },
+
+    "fileEncryption": {
+        "title": "File Encryption and Decryption Tool (Supports large files, using AES-256-CBC mode)",
+        "uploadFile": "Upload File",
+        "dragOrClick": "Drag files here or click to upload",
+        "selectedFile": "Selected File",
+        "encryptionKey": "Encryption Key",
+        "enterKey": "Please enter the encryption key",
+        "encryptFile": "Encrypt File",
+        "decryptFile": "Decrypt File",
+        "downloadEncryptedFile": "Download Encrypted File",
+        "downloadDecryptedFile": "Download Decrypted File"
     }
+        
+
+
 }

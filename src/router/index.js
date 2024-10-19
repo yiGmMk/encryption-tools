@@ -56,7 +56,19 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/randompwd.vue'),
       meta: { title: 'Random Password' }  // 定义 title
+    },
+
+    {
+      path: '/file_encrypt',
+      name: 'file_encrypt',
+      // route level code-splitting
+      // this generates a separate chunk (randompwd.[randompwd].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/file_encrypt.vue'),
+      meta: { title: 'File Encrypt & Decrypt' }  // 定义 title
     }
+
+
 
 
   ]

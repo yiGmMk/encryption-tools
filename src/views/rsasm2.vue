@@ -19,7 +19,7 @@
                             </el-radio-group>
                         </el-form-item>
                         <el-form-item>
-                            <el-button type="primary" :disabled="isGenerating" @click="generateKeys">{{ $t('rsasm2.keyGenerate.generateButton') }}</el-button>
+                            <el-button type="primary" class="encode-btn" :disabled="isGenerating" @click="generateKeys">{{ $t('rsasm2.keyGenerate.generateButton') }}</el-button>
                         </el-form-item>
                     </el-form>
                 </el-card>
@@ -70,7 +70,7 @@
                         </el-form-item>
                         <el-form-item>
                             <div class="buttons-wrapper">
-                                <el-button type="primary" @click="encrypt" icon="Lock">{{ $t('rsasm2.encryption.encryptButton')}}</el-button>
+                                <el-button type="primary"  class="encode-btn" @click="encrypt" icon="Lock">{{ $t('rsasm2.encryption.encryptButton')}}</el-button>
                             </div>
 
                         </el-form-item>
@@ -106,7 +106,7 @@
                         </el-form-item>
                         <el-form-item>
                             <div class="buttons-wrapper">
-                                <el-button type="success" @click="decrypt" icon="Unlock">{{ $t('rsasm2.decryption.decryptButton') }}</el-button>
+                                <el-button type="success" class="decode-btn" @click="decrypt" icon="Unlock">{{ $t('rsasm2.decryption.decryptButton') }}</el-button>
                             </div>
 
                         </el-form-item>
@@ -144,7 +144,7 @@
                         </el-form-item>
                         <el-form-item>
                             <div class="buttons-wrapper">
-                                <el-button type="primary" icon="Lock" @click="signature">{{ $t('rsasm2.signature.signatureButton') }}</el-button>
+                                <el-button type="primary" class="encode-btn" icon="Lock" @click="signature">{{ $t('rsasm2.signature.signatureButton') }}</el-button>
                             </div>
                         </el-form-item>
                         <el-form-item :label="$t('rsasm2.signature.signatureMessage')">
@@ -182,7 +182,7 @@
                         </el-form-item>
                         <el-form-item>
                             <div class="buttons-wrapper">
-                                <el-button type="success" icon="Unlock"
+                                <el-button type="success" class="decode-btn" icon="Unlock"
                                     @click="verifySignature">{{ $t('rsasm2.verification.verifySignatureButton') }}</el-button>
                             </div>
                         </el-form-item>
@@ -406,15 +406,34 @@ const decrypt = () => {
     color: #1d1d1f;
 }
 
-.el-button--primary {
-    background-color: #0071e3;
-    border-color: #0071e3;
+
+/* Primary encode button */
+.encode-btn {
+    width: 120px;
+    background-color: #007aff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.el-button--primary:hover,
-.el-button--primary:focus {
-    background-color: #0077ed;
-    border-color: #0077ed;
+.encode-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Success decode button */
+.decode-btn {
+    width: 120px;
+    background-color: #34c759;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.decode-btn:hover {
+    background-color: #28a745;
 }
 
 .el-input__inner,

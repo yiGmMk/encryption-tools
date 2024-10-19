@@ -4,7 +4,10 @@
 
 click [https://dazhengs.github.io/tools/](https://dazhengs.github.io/tools/) or [https://tools.dazheng.site](https://tools.dazheng.site) to use this dazhengTools.
 
-This is a toolkit that supports various encryption and encoding algorithms with the following features:
+This is a tool library that supports multiple encryption and encoding algorithms. It is fully implemented in JavaScript and can be used offline/offline to ensure data security. It has the following functions:
+
+
+0. **File Encryption and Decryption**: Supports AES256 CBC encryption of any file, and supports encryption and decryption of large files.
 
 1. **Symmetric Encryption and Decryption**: Supports AES (GCM, CBC, CFB, OFB, CTR, ECB) and SM4 (ECB, CBC) modes for encryption and decryption. The IV is randomly generated and appended to the ciphertext, ensuring secure data transmission.
 2. **Asymmetric Encryption and Decryption, Signing, and Verification**: Supports RSA2048 and SM2 algorithms, enabling data encryption, decryption, as well as digital signing and signature verification, ensuring data integrity and non-repudiation.

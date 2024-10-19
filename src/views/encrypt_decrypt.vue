@@ -10,7 +10,7 @@
       <div class="settings">
 
         <el-select v-model="keyGenMethod" placeholder="Select method" class="settings-item method-select">
-          <el-option label="AES" value="AES"></el-option>
+          <el-option label="AES-256" value="AES"></el-option>
           <el-option label="SM4" value="SM4"></el-option>
         </el-select>
         <el-select v-model="selectedMode" placeholder="Select AES mode" class="settings-item mode-select">
@@ -37,8 +37,8 @@
         <CopyTextarea v-model="inputText" :rows="4" :placeholder="$t('sy_en.input_placeholer')" />
       </el-card>
       <div class="buttons">
-        <el-button type="primary" @click="encrypt" icon="Lock">{{ $t('encrypt') }}</el-button>
-        <el-button type="success" @click="decrypt" icon="Unlock">{{ $t('decrypt') }}</el-button>
+        <el-button type="primary" class="encode-btn" @click="encrypt" icon="Lock">{{ $t('encrypt') }}</el-button>
+        <el-button type="success" class="decode-btn" @click="decrypt" icon="Unlock">{{ $t('decrypt') }}</el-button>
       </div>
       <el-card class="output-card">
         <template #header>
@@ -71,6 +71,7 @@ const { t } = useI18n();
 const selectedMode = ref('GCM');
 const keyGenMethod = ref('AES')
 const encryptionModes = [
+  // GCM CBC CFB OFB CTR ECB
   { label: 'GCM', value: 'GCM' },
   { label: 'CBC', value: 'CBC' },
   { label: 'CFB', value: 'CFB' },
@@ -282,10 +283,39 @@ const decrypt = async () => {
   margin: 5px 0;
 }
 
-.buttons .el-button {
+/* .buttons .el-button {
   font-size: 1em;
   padding: 10px 20px;
   border-radius: 8px;
+} */
+
+
+.encode-btn {
+  width: 120px;
+  background-color: #007aff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.encode-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Success decode button */
+.decode-btn {
+  width: 120px;
+  background-color: #34c759;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+.decode-btn:hover {
+  background-color: #28a745;
 }
 
 

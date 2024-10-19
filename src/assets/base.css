@@ -1,4 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import 'flag-icons/css/flag-icons.min.css';
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -103,3 +105,32 @@ body {
   margin-bottom: 20px;
   margin-top: 0px;
 }
+
+.encode-btn {
+  width: 120px;
+  background-color: #007aff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.encode-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Success decode button */
+.decode-btn {
+  width: 120px;
+  background-color: #34c759;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+.decode-btn:hover {
+  background-color: #28a745;
+}
+

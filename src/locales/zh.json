@@ -5,7 +5,8 @@
         "hash": "哈希计算",
         "random_password": "随机密码",
         "symmetric_encryption": "对称加密",
-        "asymmetric_encryption": "非对称加密"
+        "asymmetric_encryption": "非对称加密",
+        "file_encrypt": "文件加密"
     },
     "encrypt": "加密",
     "decrypt": "解密",
@@ -119,5 +120,17 @@
             "placeholder_msg":"请输入要验签的文本【签名前的文本】",
             "placeholder_signatureMessage":"请输入签名的消息"
         }
+    },
+    "fileEncryption": {
+        "title": "文件加密解密工具（支持大文件,使用 AES-256-CBC 模式）",
+        "uploadFile": "上传文件",
+        "dragOrClick": "拖拽文件到此处或点击上传",
+        "selectedFile": "已选择文件",
+        "encryptionKey": "加密密钥",
+        "enterKey": "请输入加密密钥",
+        "encryptFile": "加密文件",
+        "decryptFile": "解密文件",
+        "downloadEncryptedFile": "下载加密文件",
+        "downloadDecryptedFile": "下载解密文件"
     }
 }
